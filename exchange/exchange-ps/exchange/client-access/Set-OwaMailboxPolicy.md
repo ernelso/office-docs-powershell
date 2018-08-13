@@ -393,6 +393,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+By default, this setting is meaningless, because all Outlook on the web sessions are considered to be on private computers. In on-premises Exchange, the only way that users can specify public computer sessions is if you've enabled the selection on the sign in page (the LogonPagePublicPrivateSelectionEnabled parameter value is $true on the Set-OwaVirtualDirectory cmdlet)
+
 ### -DomainController
 This parameter is available only in on-premises Exchange.
 
@@ -1242,6 +1244,8 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+
+By default, this setting is meaningless, because all Outlook on the web sessions are considered to be on private computers. In on-premises Exchange, the only way that users can specify public computer sessions is if you've enabled the selection on the sign in page (the LogonPagePublicPrivateSelectionEnabled parameter value is $true on the Set-OwaVirtualDirectory cmdlet)
 
 ### -GroupCreationEnabled
 The GroupCreationEnabled parameter specifies whether to allow users to create Office 365 groups in Outlook on the web. Valid values are:
