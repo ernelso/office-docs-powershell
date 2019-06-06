@@ -934,6 +934,8 @@ Accept wildcard characters: False
 ### -DefaultPublicFolderDeletedItemRetention
 The DefaultPublicFolderDeletedItemRetention parameter specifies the default value of the length of time to retain deleted items for public folders across the entire organization. This attribute applies to all public folders in the organization that don't have their own RetainDeletedItemsFor attribute set.
 
+To specify a value, enter it as a time span: dd.hh:mm:ss where dd = days, hh = hours, mm = minutes, and ss = seconds. The default value in Exchange Online is 30.00:00:00 (30 days).
+
 ```yaml
 Type: EnhancedTimeSpan
 Parameter Sets: (All)
@@ -1012,6 +1014,8 @@ Accept wildcard characters: False
 The DefaultPublicFolderMovedItemRetention parameter specifies how long items that have been moved between mailboxes are kept in the source mailbox for recovery purposes before being removed by the Public Folder Assistant.
 
 When you move folder contents between mailboxes, a copy of the original data is left on the source mailbox, inaccessible for users but available for recovery by system administrators. If the move process fails and you want to roll it back, use the Set-PublicFolder -OverrideContentMailbox command to recover data. For more information, see Set-PublicFolder.
+
+To specify a value, enter it as a time span: dd.hh:mm:ss where dd = days, hh = hours, mm = minutes, and ss = seconds. The default value in Exchange Online is 7.00:00:00 (7 days).
 
 ```yaml
 Type: EnhancedTimeSpan
